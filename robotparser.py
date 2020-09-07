@@ -21,3 +21,10 @@ if rp.can_fetch(useragent, 'https://www.taobao.com/product/'):
     print('succeed!')
 else:
     print("failed! can't fetch.")
+
+# 实例分析：淘宝网的 Robots.txt文件
+# User-agent: Baiduspider
+# Disallow: /
+# User-agent: baiduspider
+# Disallow: /
+# 很显然淘宝不允许百度的机器人访问其网站下其所有的目录。
